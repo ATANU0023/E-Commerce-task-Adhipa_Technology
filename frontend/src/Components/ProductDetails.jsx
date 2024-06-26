@@ -45,9 +45,9 @@ const ProductDetails = (props) => {
                         </div>
                         <div className='flex flex-col gap-y-3 mb-4 max-w-[555px]'>
                             <button onClick={()=>{addToCart(product.id)}} className='py-3 w-full ring-1 ring-slate-950 !rounded-none uppercase tracking-widest bg-transparent hover:bg-slate-900 hover:text-white '>Add to Cart</button>
-                            <button className='py-3 w-ful bg-gray-800 !rounded-none uppercase tracking-widest bg-transparent text-white '>Buy Now</button>
+                            <button className='py-3 w-ful bg-slate-800 !rounded-none uppercase tracking-widest text-white  '><div className='hover:scale-110 '>Buy Now</div></button>
                         </div>
-                        <p><span className='font-semibold text-xl text-gray-700'>Category :</span> Fruits</p>
+                        <p><span className='font-semibold text-xl text-gray-700'>Category :</span>{product.category}</p>
 
                     </div>
                 </div>

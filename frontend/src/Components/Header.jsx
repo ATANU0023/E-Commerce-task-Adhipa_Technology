@@ -54,7 +54,7 @@ const Header = () => {
               Log Out
             </button>
               :
-              <button onClick={() => loginWithRedirect()} className={'px-8 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white'}><FaRegUserCircle className='h-7 w-7' />Log In</button>}
+              <button onClick={() => loginWithRedirect()} className={'px-8 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white hover:bg-blue-600'}><FaRegUserCircle className='h-7 w-7' />Log In</button>}
           </div>
         </div>
 
