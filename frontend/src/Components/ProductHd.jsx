@@ -7,7 +7,7 @@ const ProductHd = (props) => {
 
   return (
     <div className='flex items-center flex-wrap gap-x-2 capitalize font-semibold mb-6'>
-      Home <TbArrowRight/> Shop <TbArrowRight/>{product.name}
+      Home <TbArrowRight/> Shop<TbArrowRight/>{product.category} <TbArrowRight/>{product.name}
     </div>
   )
 }

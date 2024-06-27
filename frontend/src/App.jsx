@@ -7,6 +7,7 @@ import Cart from './Pages/Cart.jsx';
 import Login from './Pages/Login.jsx';
 import Footer from './Components/Footer'
 import Category from './Pages/Category.jsx'
+import AvailableProducts from './Pages/AvailableProducts.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/Shop Now' element={<AvailableProducts/>} />
           <Route path='/Fruits' element={<Category category="fruits" />} />
           <Route path='/Vegitables' element={<Category category="vegetables"/>} />
           {/*<Route path='/Fruit & Veggies' element={<Category category={"fruits,vegetables"} />}/>*/}

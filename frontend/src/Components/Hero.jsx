@@ -22,7 +22,7 @@ const Hero = () => {
 
             </div>
             <div className='flex   gap-4 '>
-                <NavLink to={''} className={"px-8 py-3 bg-slate-700 rounded-full text-white font-bold items-center"}>
+                <NavLink to={'/Shop Now'} className={"px-8 py-3 bg-slate-700 rounded-full text-white font-bold items-center"}>
                     Shop Now
                 </NavLink>
                 <NavLink to={''} className={"px-8 py-3 bg-slate-700 rounded-full text-white font-bold items-center justify-center flex gap-2"}><MdOutlineLocalOffer className='text-2xl'/>

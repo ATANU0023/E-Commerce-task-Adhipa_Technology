@@ -24,7 +24,7 @@ const Header = () => {
   return (
 
 
-    <header className=' fixed top-0 left-0 m-auto w-full bg-white ring-1 ring-slate-900/s z-10'>
+    <header className=' fixed top-0 left-0 m-auto w-full bg-white ring-1 ring-slate-900/10 shadow-sm z-10'>
       <div className='py-3 px-4 flex justify-between items-center md:px-2'>
         <div>
           <Link to='/'>
@@ -33,7 +33,7 @@ const Header = () => {
           </Link>
         </div>
         <Nav containerStyles={"hidden md:flex gap-x-5 xl:gap-x-10 medium-15 font-bold"} />
-        <Nav containerStyles={`${isOpen ? "flex item-start flex-col gap-y-12 fixed top-20 right-8 p-12 mt-6 bg-white rounded-3xl shadow-xl font-bold w-64 medium-16 ring-1 ring-slate-900/20 transition-all duration-300  " : "flex item-start flex-col gap-y-12 fixed top-20 p-12 mt-6 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/20 shadow-xl font-bold transition-all duration-300 -right-[100%] "}`} />
+        <Nav containerStyles={`${isOpen ? "flex item-start flex-col gap-y-12 fixed top-20 right-8 p-12 mt-6 bg-white rounded-3xl shadow-xl font-bold w-64 medium-16 ring-1 ring-slate-900/20 transition-all duration-300 sm:hidden " : "flex item-start flex-col gap-y-12 fixed top-20 p-12 mt-6 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/20 shadow-xl font-bold transition-all duration-300 -right-[100%] "}`} />
         <div className='flex justify-between sm:gap-x-3 bold-16 items-center'>
           <NavLink to={'cart'} className={"flex"}><BsCart4 className='p-1 h-8 w-8 ring-slate-900/30 ' /><span className=' relative flex items-center w-5 h-5 font-bold rounded-full -top-2 '>{totalCartItems()}</span></NavLink>
 
@@ -50,11 +50,11 @@ const Header = () => {
               
             }
 
-            {isAuthenticated ? <button className={'px-8 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white'} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><SlLogout className=' h-7 w-7' />
+            {isAuthenticated ? <button className={'px-4 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white'} onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><SlLogout className=' h-7 w-7' />
               Log Out
             </button>
               :
-              <button onClick={() => loginWithRedirect()} className={'px-8 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white hover:bg-blue-600'}><FaRegUserCircle className='h-7 w-7' />Log In</button>}
+              <button onClick={() => loginWithRedirect()} className={'px-4 py-3 bg-green-600 rounded-full flex items-center gap-x-2  font-bold  text-white hover:bg-blue-600'}><FaRegUserCircle className='h-7 w-7' />Log In</button>}
           </div>
         </div>
 
