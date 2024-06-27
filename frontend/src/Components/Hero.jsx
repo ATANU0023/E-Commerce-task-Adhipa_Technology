@@ -2,10 +2,11 @@ import React from 'react'
 import { MdOutlineLocalOffer, MdStar } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import {FaStar} from 'react-icons/fa';
+import hero from '../assets/hero.jpg'
 
 const Hero = () => {
   return (
-    <section className="relative bg-hero bg-center bg-no-repeat h-screen w-full bg-cover ">
+    <section style={{backgroundImage: `url(${hero})`}}  className="relative bg-url('../assets/hero.jpg')  bg-center bg-no-repeat h-screen w-full bg-cover ">
         <div className=' py-52 p-6 top-32 sm:top-52 sm:px-10'>
             <h1 className=' font-extrabold text-7xl text-green-500 max-w-[52rem]'>
                 Fruit and Veggies mart online
